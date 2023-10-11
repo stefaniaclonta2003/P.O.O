@@ -1,0 +1,13 @@
+public class ContBancar{ 
+
+	double sold;
+	public ContBancar(){
+		sold = 0;
+	}
+	public double getSold(){
+		return sold;
+	}
+	
+}
+
+
