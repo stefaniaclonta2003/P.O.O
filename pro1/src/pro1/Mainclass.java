@@ -26,7 +26,7 @@ public class Mainclass {
 			System.out.println("val gresita ");
 			InputValue = input.nextInt();
 		}
-		System.out.println("val noua" + InputValue);
+		System.out.println("val noua " + InputValue);
 	}
 
 }
