@@ -10,10 +10,11 @@ public class Autovehicul {
 	int treaptaCurenta;
 	Color culoare;
 	Sofer sofer1;
+	Rezervor rez;
 	@Override
 	public String toString()
 	{
-		return "Marca este " + marca + " are viteza curenta de " + vitezaCurenta + " si se afla in treapta " + treaptaCurenta + " numele soferului este " + sofer1.getNume() + " si are varsta de " + sofer1.getVarsta() +  " iar numarul permisului este " + sofer1.getPermis();
+		return "Marca este " + marca + " are viteza curenta de " + vitezaCurenta + " si se afla in treapta " + treaptaCurenta + " numele soferului este " + sofer1.getNume() + " si are varsta de " + sofer1.getVarsta() +  " iar numarul permisului este " + sofer1.getPermis() + " rezervorul are capacitatea maxima de " + rez.getCapacitateMax() + " iar capacitatea curenta este de " + rez.getCapacitateCurr();
 	}
 	public String getMarca()
 	{
@@ -49,8 +50,9 @@ public class Autovehicul {
 	{
 		this.treaptaCurenta = treaptaCurenta;
 	}
-	public Autovehicul(Sofer sofer1, String marca, float vitezaCurenta, float vitezaMaxima, int nrTrepte, int treaptaCurenta, Color culoare )
+	public Autovehicul(Sofer sofer1, Rezervor rez, String marca, float vitezaCurenta, float vitezaMaxima, int nrTrepte, int treaptaCurenta, Color culoare )
 	{
+		this.rez = rez;
 		this.sofer1 = sofer1;
 		this.marca = marca;
 		this.vitezaCurenta = vitezaCurenta;

@@ -7,7 +7,8 @@ public class Mainclass {
 
 	public static void main(String[] args) {
 		Sofer soferul = new Sofer("Stefi", 20, 123);
-		Autovehicul auto = new Autovehicul(soferul, "Ford", 120, 200, 5, 2, Color.magenta);
+		Rezervor reze = new Rezervor(200, 120);
+		Autovehicul auto = new Autovehicul(soferul, reze, "Ford", 120, 200, 5, 2, Color.magenta);
 		
 		
 		System.out.println(auto);
